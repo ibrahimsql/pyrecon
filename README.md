@@ -7,7 +7,7 @@
 - **Fully Written in Python**: Easy to use, extend, and integrate into your existing Python projects.
 - **Fast and Efficient**: Optimized to run quickly, even for large-scale queries across multiple websites.
 - **Customizable Search**: Allow the user to define custom dorks or search patterns based on their needs.
-- **JSON Export**: Save your results in **JSON** format for easy parsing and further analysis.
+- **JSON Export**: Save your results in **JSON,TXT,DB,CSV** format for easy parsing and further analysis.
 - **Rate Limiting**: Prevent Google from blocking your requests by controlling the number of queries sent per minute.
 - **Multi-threading**: Run multiple queries simultaneously to increase speed without losing performance.
 - **User-friendly Interface**: Designed to be simple to use for both beginners and advanced users.
@@ -27,7 +27,7 @@ This tool is perfect for **security auditing**, **penetration testing**, and **i
 - 🐍 **Built in Python**: Easy to use, extend, and integrate into your existing Python-based tools.
 - ⚡ **Fast and Efficient**: Optimized to handle large-scale queries with speed, even across multiple websites at once.
 - 🔧 **Customizable Search Parameters**: Create personalized search patterns to suit your specific security needs.
-- 📥 **Export to JSON**: Save your results in **JSON** format for easy parsing, analysis, and integration with other tools.
+- 📥 **Export to JSON**: Save your results in **JSON,TXT,DB,CSV** format for easy parsing, analysis, and integration with other tools.
 - 🛡️ **Rate Limiting**: Control your search frequency to avoid being blocked by Google, making your searches safer and more reliable.
 - ⚙️ **Multi-threading Support**: Perform multiple queries in parallel for faster results.
 - 🎯 **User-Friendly Interface**: Simple, intuitive, and designed for both beginners and experienced users.
@@ -35,7 +35,7 @@ This tool is perfect for **security auditing**, **penetration testing**, and **i
 ## **Installation**
 
 1. Clone the repository:
-git clone https://github.com/ibrahimsql/pygoogledork.git
+git clone https://github.com/ibrahimsql/pyrecon.git
   
 
 2. Navigate to the project directory:
