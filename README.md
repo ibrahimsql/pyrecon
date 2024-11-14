@@ -15,9 +15,9 @@
 
 ---
 
-# **PyDorker: Powerful Python Google Dorking Tool for Security Audits**
+# **PyRecon: Powerful Python Google Dorking Tool for Security Audits**
 
-**PyDorker** is a highly efficient, Python-based tool that uses advanced **Google Dorking** techniques to uncover hidden vulnerabilities, sensitive data, and publicly exposed information on the internet. Whether you’re a penetration tester, security auditor, or researcher, **PyDorker** will help you automate the process of finding hard-to-reach resources. 
+**PyDorker** is a highly efficient, Python-based tool that uses advanced **Google Dorking** techniques to uncover hidden vulnerabilities, sensitive data, and publicly exposed information on the internet. Whether you’re a penetration tester, security auditor, or researcher, **PyRecon** will help you automate the process of finding hard-to-reach resources. 
 
 This tool is perfect for **security auditing**, **penetration testing**, and **information gathering**, allowing you to find exposed databases, credentials, misconfigurations, and other sensitive data on websites.
 
@@ -47,23 +47,87 @@ pip install -r requirements.txt
 
 To run **PyRecon**, simply execute the following command with your desired search parameters:
 
-python pygoogledork.py -d "<dork_query>" -t <threads> -o output.json
+python PyRecon -d "<dork_query>" -t <threads> -o output.json
 
 
 ### Example:
 
-python pygoogledork.py -d "inurl:admin site:example.com" -t 4 -o results.json
+python PyRecon -d "inurl:admin site:example.com" -t 4 -o results.json
 
 
 This will run the query `inurl:admin site:example.com` using **4 threads**, saving the results in a file called **results.json**.
 
 ### Available Options:
 
-- `-d`: **Dork query** to search for.
-- `-t`: **Number of threads** for parallel queries.
-- `-o`: **Output format** ( default="txt" supports `.txt, json, csv, or db`).
-- `-l`: Limit the number of results returned per query.
-- `-r`: **Rate limit** per minute (to avoid getting blocked by Google).
+-h, --help: Show help message and exit.
+
+-q QUERY [QUERY ...], --query QUERY [QUERY ...]: Google Dork query or queries (multiple allowed).
+
+-n NUMBER, --number NUMBER: Max number of sites to fetch.
+
+-o OUTPUT, --output OUTPUT: Output file name (without extension).
+
+-t TLD, --tld TLD: Domain extension (e.g., com, org, net).
+
+--remove-www: Remove www prefix from URLs.
+
+--min-delay MIN_DELAY: Minimum wait time (in seconds) between queries.
+
+--max-delay MAX_DELAY: Maximum wait time (in seconds) between queries.
+
+--output-format {txt,json,csv,db}: Output format (default: "txt", supports .txt, .json, .csv, or .db).
+
+--proxy PROXY [PROXY ...]: Proxy addresses to route queries through (e.g., http://proxy1, http://proxy2).
+
+--check-cloudflare: Skip sites that are protected by Cloudflare.
+
+--threads THREADS: Max number of threads to run concurrently.
+
+--proxy-rotator: Use a different proxy for each request to avoid IP bans.
+
+--captcha-bypass: Attempt to bypass CAPTCHA challenges during searches.
+
+--scheduler SCHEDULER: Schedule scan to start at a specific time (e.g., '23:00').
+
+--max-results MAX_RESULTS: Limit the max number of results to be returned.
+
+--vulnerability-report: Automatically generate vulnerability reports based on findings.
+
+--web-scraping-api: Integrate with a web scraping API for enhanced scraping capabilities.
+
+--lang LANG: Filter search results by a specific language (e.g., 'en', 'tr').
+
+--geo-target GEO_TARGET: Specify a geographic location for search queries (e.g., 'US', 'DE').
+
+--dns-tunneling: Bypass network restrictions using DNS Tunneling methods.
+
+--ssl-check: Perform SSL/TLS vulnerability checks on the discovered domains.
+
+--dork-type {filetype,inurl,intitle}: Specify the dork type (e.g., filetype, inurl, intitle).
+
+--category CATEGORY: Choose a category for the search query (e.g., 'admin', 'login').
+
+--cookie COOKIE: Specify a custom cookie for use during the search session.
+
+--agent AGENT: Use a custom User-Agent string for the HTTP requests.
+
+--list: Perform a batch search using predefined dork lists.
+
+--no-sandbox: Disable sandbox features to allow unrestricted search queries.
+
+--save: Save the search results to a file.
+
+-f FILE, --file FILE: Perform batch search using a file containing a list of dorks.
+
+--timeout TIMEOUT: Set a custom request timeout (in seconds).
+
+--domain DOMAIN: Focus the search on a specific domain (e.g., example.com).
+
+--num-results NUM_RESULTS: Limit the number of results returned for each query.
+
+--waf-bypass: Attempt to bypass Web Application Firewall (WAF) protections during searches.
+
+--exploit-db: Search for vulnerabilities using Exploit-DB integration.
 
 ## **Contributing**
 
