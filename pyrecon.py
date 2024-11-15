@@ -116,7 +116,6 @@ def signal_handler(sig, frame):
     sys.exit(0)
 signal.signal(signal.SIGINT, signal_handler)
 
-# Kodunuza Proxy Seçim Ekleyelim (Koddan Çıkarmadan)
 def get_random_proxy():
     if args.proxy:
         proxy = random.choice(args.proxy)
@@ -127,7 +126,7 @@ def get_random_proxy():
 # Git version check
 def version_check():
     version = "v3.1.4"
-    url = "https://api.github.com/repos/ibrahimsql/ozripper/releases/latest"  # Corrected URL
+    url = "https://github.com/ibrahimsql/pyrecon/releases/tag/3.1.4"
     
     try:
         # API isteği gönderme
