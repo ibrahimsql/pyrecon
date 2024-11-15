@@ -42,7 +42,7 @@ RED = "\033[31m"
 emoji_message = "\U0001F496" + " ❤️  Öykü'me Özel Bir Hediye  ❤️ " + "\U0001F496"
 
 # Create a futuristic-looking banner with enhanced design
-banner =f"""
+banner =rf"""
 {CYAN}  
 =============================================================================
 {MAGENTA}                   {emoji_message}
