@@ -59,75 +59,7 @@ This will run the query `inurl:admin site:example.com` using **4 threads**, savi
 
 ### Available Options:
 
--h, --help: Show help message and exit.
 
--q QUERY [QUERY ...], --query QUERY [QUERY ...]: Google Dork query or queries (multiple allowed).
-
--n NUMBER, --number NUMBER: Max number of sites to fetch.
-
--o OUTPUT, --output OUTPUT: Output file name (without extension).
-
--t TLD, --tld TLD: Domain extension (e.g., com, org, net).
-
---remove-www: Remove www prefix from URLs.
-
---min-delay MIN_DELAY: Minimum wait time (in seconds) between queries.
-
---max-delay MAX_DELAY: Maximum wait time (in seconds) between queries.
-
---output-format {txt,json,csv,db}: Output format (default: "txt", supports .txt, .json, .csv, or .db).
-
---proxy PROXY [PROXY ...]: Proxy addresses to route queries through (e.g., http://proxy1, http://proxy2).
-
---check-cloudflare: Skip sites that are protected by Cloudflare.
-
---threads THREADS: Max number of threads to run concurrently.
-
---proxy-rotator: Use a different proxy for each request to avoid IP bans.
-
---captcha-bypass: Attempt to bypass CAPTCHA challenges during searches.
-
---scheduler SCHEDULER: Schedule scan to start at a specific time (e.g., '23:00').
-
---max-results MAX_RESULTS: Limit the max number of results to be returned.
-
---vulnerability-report: Automatically generate vulnerability reports based on findings.
-
---web-scraping-api: Integrate with a web scraping API for enhanced scraping capabilities.
-
---lang LANG: Filter search results by a specific language (e.g., 'en', 'tr').
-
---geo-target GEO_TARGET: Specify a geographic location for search queries (e.g., 'US', 'DE').
-
---dns-tunneling: Bypass network restrictions using DNS Tunneling methods.
-
---ssl-check: Perform SSL/TLS vulnerability checks on the discovered domains.
-
---dork-type {filetype,inurl,intitle}: Specify the dork type (e.g., filetype, inurl, intitle).
-
---category CATEGORY: Choose a category for the search query (e.g., 'admin', 'login').
-
---cookie COOKIE: Specify a custom cookie for use during the search session.
-
---agent AGENT: Use a custom User-Agent string for the HTTP requests.
-
---list: Perform a batch search using predefined dork lists.
-
---no-sandbox: Disable sandbox features to allow unrestricted search queries.
-
---save: Save the search results to a file.
-
--f FILE, --file FILE: Perform batch search using a file containing a list of dorks.
-
---timeout TIMEOUT: Set a custom request timeout (in seconds).
-
---domain DOMAIN: Focus the search on a specific domain (e.g., example.com).
-
---num-results NUM_RESULTS: Limit the number of results returned for each query.
-
---waf-bypass: Attempt to bypass Web Application Firewall (WAF) protections during searches.
-
---exploit-db: Search for vulnerabilities using Exploit-DB integration.
 
 ## **Contributing**
 
