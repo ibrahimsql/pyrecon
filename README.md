@@ -11,9 +11,8 @@
 - **Rate Limiting**: Prevent Google from blocking your requests by controlling the number of queries sent per minute.
 - **Multi-threading**: Run multiple queries simultaneously to increase speed without losing performance.
 - **User-friendly Interface**: Designed to be simple to use for both beginners and advanced users.
-- İşte **PyDorker** projeniz için GitHub’a yükleyeceğiniz, daha dikkat çekici ve profesyonel bir açıklama. Bu sürüm, doğru formatta ve içerikte daha fazla ilgi çekebilir:
 
----
+
 
 # **PyRecon: Powerful Python Google Dorking Tool for Security Audits**
 
