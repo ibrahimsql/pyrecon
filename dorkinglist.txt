@@ -1,0 +1,121 @@
+# Ethical Bug Bounty & Pentest Dorks List
+# Created by ibrahimSQL 
+# Last Updated: 2024
+# Purpose: Legal and ethical testing only
+
+###################
+# Bug Bounty Programs
+###################
+intext:"bug bounty program" site:*.com
+intext:"responsible disclosure" site:*.com
+intext:"security rewards" site:*.com
+intext:"vulnerability disclosure policy" site:*.com
+intext:"security policy" "rewards" site:*.com
+intext:"bug bounty" "rewards" -hackerone -bugcrowd site:*.com
+site:security.*.com intext:"report vulnerability"
+site:*.com/security "submit vulnerability"
+site:*/security.txt "contact"
+intext:"security researcher" "hall of fame" site:*.com
+
+###################
+# Legal Testing Environments
+###################
+intext:"pentest lab" site:*.com
+intext:"vulnerable by design" site:*.com
+intext:"practice penetration testing" site:*.com
+site:*.vulnhub.com
+site:*.hackthebox.com
+inurl:"/test/" intext:"test environment"
+intext:"CTF platform" site:*.com
+intext:"security training lab" site:*.com
+intext:"deliberately vulnerable" site:*.com
+intext:"practice your skills" "security" site:*.com
+
+###################
+# Responsible Disclosure
+###################
+inurl:security.txt site:*.com
+inurl:/.well-known/security.txt site:*.com
+intext:"responsible disclosure policy" site:*.com
+intext:"vulnerability reporting policy" site:*.com
+inurl:/security intext:"report vulnerability"
+intext:"security researchers" "reporting" site:*.com
+intext:"vulnerability reward program" site:*.com
+intext:"coordinated disclosure" site:*.com
+intext:"security contact" "pgp key" site:*.com
+intext:"security@" intext:"reporting" site:*.com
+
+###################
+# Test Environments
+###################
+inurl:test. site:*.com intext:"test environment"
+inurl:dev. site:*.com intext:"development"
+inurl:stage. site:*.com intext:"staging"
+intext:"sandbox environment" site:*.com
+intext:"test account" "security" site:*.com
+inurl:demo. site:*.com intext:"demonstration"
+intext:"testing environment" "security" site:*.com
+intext:"practice environment" "security" site:*.com
+inurl:beta. site:*.com intext:"beta testing"
+intext:"security testing environment" site:*.com
+
+###################
+# Security Programs
+###################
+site:hackerone.com/programs inurl:"/policy_scopes"
+site:bugcrowd.com/programs intext:"scope"
+site:yeswehack.com intext:"program"
+site:hackenproof.com intext:"rewards"
+site:intigriti.com intext:"scope"
+intext:"security.txt" site:*.com
+intext:"security contact" site:*.com
+intext:"security policy" site:*.com
+intext:"vulnerability disclosure" site:*.com
+intext:"bug reporting" site:*.com
+
+###################
+# Documentation & Policies
+###################
+filetype:pdf intext:"security policy"
+filetype:pdf intext:"responsible disclosure"
+filetype:pdf intext:"vulnerability disclosure"
+filetype:doc|docx intext:"security testing policy"
+filetype:pdf intext:"penetration testing guidelines"
+intext:"ethical hacking policy" filetype:pdf
+intext:"security research policy" filetype:pdf
+intext:"vulnerability reporting guidelines" filetype:pdf
+intext:"bug bounty rules" filetype:pdf
+intext:"security testing scope" filetype:pdf
+
+###################
+# Training Resources
+###################
+intext:"penetration testing course" site:*.com
+intext:"ethical hacking training" site:*.com
+intext:"security research training" site:*.com
+intext:"bug bounty tutorial" site:*.com
+intext:"learn penetration testing" site:*.com
+intext:"security testing course" site:*.com
+intext:"practice hacking legally" site:*.com
+intext:"security labs" "training" site:*.com
+intext:"CTF challenges" site:*.com
+intext:"security practice platform" site:*.com
+
+###################
+# Legal Testing Platforms
+###################
+site:tryhackme.com
+site:hackthebox.eu
+site:vulnhub.com
+site:portswigger.net/web-security
+site:pentesterlab.com
+site:root-me.org
+site:ctftime.org
+site:overthewire.org
+site:defendtheweb.net
+site:hackthissite.org
+
+# Not: Bu dorkları sadece:
+# 1. İzin verilen sistemlerde
+# 2. Yasal sınırlar içinde
+# 3. Etik kurallar çerçevesinde kullanın
